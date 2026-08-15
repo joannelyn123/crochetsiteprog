@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - Joannelyn's Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <!-- HEADER -->
+
+  <header>
+      <div class="header-content">
+        <h1 class="cormorant-regular">🌼JOANNELYN'S STORE</h1>
+
+        <p>Handmade Crochet Creations</p>
+      </div>
+    </header>
+    <!-- NAVIGATION -->
+
+    <nav>
+      <a href="home.html">
+        <img src="gif.gif" alt="lol" />
+        HOME
+      </a>
+
+      <a href="products.html">
+        <img src="gif.gif" alt="lol" />
+        PRODUCTS
+      </a>
+
+      <a href="about.html">
+        <img src="gif.gif" alt="lol" />
+        ABOUT US
+      </a>
+    </nav>
+
+    <!-- PRODUCTS -->
+
+    <main>
+   <section class="products-header">
+
+    <div class="hero-content">
+
+        <p class="cormorant-bold welcome">WELCOME TO</p>
+
+        <h2 class="lavishly-yours-regular">
+            Crochet Products
+        </h2>
+
+        <p>
+            Explore our cute and handmade crochet creations.
+        </p>
+
+    </div>
+
+</section>
+      </div>
+
+      <section class="products">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="flowerbag.jpg" alt="Crochet Flower">
+          </div>
+
+          <h3>Crochet Flower</h3>
+
+          <p class="product-description">A cute handmade crochet flower.</p>
+
+          <p class="price">₱250</p>
+
+          <button onclick="openDetails('flower')">VIEW DETAILS</button>        </div>
+
+              <div id="flower" class="details-box">
+
+          <div class="details-content">
+
+        <span onclick="closeDetails('flower')" class="close">
+            &times;
+        </span>
+
+
+        <h2>🌸 Crochet Flower</h2>
+
+        <p>
+            A cute handmade crochet flower made
+            with soft yarn and lots of care.
+        </p>
+
+        <p><strong>Price:</strong> ₱250</p>
+
+        <p><strong>Color:</strong> Pink</p>
+
+        <p><strong>Material:</strong> Soft yarn</p>
+
+        <p><strong>Size:</strong> 15 cm</p>
+
+           <button onclick="addToCart('Crochet Flower', 250)">
+    ADD TO CART
+</button>
+
+    </div>
+
+</div>
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card">
+          <div class="product-image">
+            <p>Product Image</p>
+          </div>
+
+          <h3>Crochet Bear</h3>
+
+          <p class="product-description">
+            A cute and adorable handmade crochet bear.
+          </p>
+
+          <p class="price">₱350</p>
+
+              <button onclick="openDetails('bear')">VIEW DETAILS</button>  </div>
+
+
+              <div id="bear" class="details-box">
+
+    <div class="details-content">
+
+        <span onclick="closeDetails('bear')" class="close">
+            &times;
+        </span>
+
+        <h2>🌸 Crochet Bear</h2>
+
+        <p>
+            A cute handmade crochet flower made
+            with soft yarn and lots of care.
+        </p>
+
+        <p><strong>Price:</strong> ₱350</p>
+
+        <p><strong>Color:</strong> Pink</p>
+
+        <p><strong>Material:</strong> Soft yarn</p>
+
+        <p><strong>Size:</strong> 15 cm</p>
+
+                  <button onclick="addToCart('Crochet Bear', 350)">
+    ADD TO CART
+</button>
+
+    </div>
+
+</div>
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card">
+          <div class="product-image">
+            <p>Product Image</p>
+          </div>
+
+          <h3>Crochet Bag</h3>
+
+          <p class="product-description">
+            A simple and stylish handmade crochet bag.
+          </p>
+
+          <p class="price">₱500</p>
+
+          <button onclick="openDetails('bag')">VIEW DETAILS</button>        </div>
+
+           <div id="bag" class="details-box">
+
+    <div class="details-content">
+
+        <span onclick="closeDetails('bag')" class="close">
+            &times;
+        </span>
+
+        <h2>🌸 Crochet Bag</h2>
+
+        <p>
+            A cute handmade crochet flower made
+            with soft yarn and lots of care.
+        </p>
+
+        <p><strong>Price:</strong> ₱500</p>
+
+        <p><strong>Color:</strong> Pink</p>
+
+        <p><strong>Material:</strong> Soft yarn</p>
+
+        <p><strong>Size:</strong> 15 cm</p>
+
+                  <button onclick="addToCart('Crochet Bag', 500)">
+    ADD TO CART
+</button>
+
+
+        </div>
+      </section>
+    </main>
+
+<script>
+function openDetails(id) {
+    document.getElementById(id).style.display = "flex";
+}
+
+function closeDetails(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+function addToCart(name, price) {
+    alert(name + " added to cart! Price: ₱" + price);
+}
+</script>
+
+</body>
+</html>
